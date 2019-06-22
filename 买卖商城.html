@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>买卖商城</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			padding: 0px;
+			margin:0px auto;
+		}
+		/*header*/
+	.header-wrap{
+		width: 100%;
+		height: 35px;
+		}
+	.header{
+		width: 1200px;
+		height: 35px;
+	}
+	.header-top{
+		float: left;
+	}
+	.header-top span{
+		padding-left: 525px;
+		font-size: 13px;
+		text-align: center;
+	}
+	.header-top div{
+		float: right;
+		margin-left: 40px;
+		font-size: 15px;
+		text-align: center;
+	}
+	.header-top a:link{
+		text-decoration: none;
+		color: black;
+	}
+	.header-top a:visited{
+		color: black;
+	}
+    .a1{
+    	font-weight: bold;
+    	margin-right: 20px;
+    }
+    .a2{
+    	font-weight: bold;
+    	margin-right: 20px;
+    }
+    .a3{
+    	margin-right: 13px;
+    }
+    .a4{
+    	margin-right: 13px;
+    	margin-left: 3px;
+    }
+    .a5{
+    	margin-right: 25px;
+	    margin-left: 10px;
+    }
+    .img1{
+    	margin-right: 3px;
+    }
+    /*nav*/
+    .nav-wrap{
+    	width: 100%;
+    	height: 160px;
+    	border-bottom:4px solid rgb(58,167,71);
+    }
+    .nav{
+    	width: 1200px;
+    	height: 160px;
+    	margin:0px;
+    }
+    .nav-top{
+    	height: 120px;
+    	width: 1200px;
+    	text-align: center;
+    }
+    .img2{
+    	float: left;
+    	margin-left: 100px;
+    }
+    .kuang{
+    	position: relative;
+    	left: -70px;
+    	top: 20px;
+    	width:520px; 
+    	height:45px;
+    	text-align: center;
+    }
+    .search{
+    	position: relative;
+    	left: -120px;
+    	top: 36px;
+    	border-left:1px solid grey;
+    	height: 43px;
+    }
+    .same{
+    	padding: 0px;
+    	margin:0px;
+    	box-sizing: border-box;
+    }
+    .img3{
+    	position: relative;
+    	left:340px;
+    	bottom: 20px;
+    }
+    .nav-main{
+    	width: 1200px;
+    	height: 40px;
+    	margin-left: 100px;
+    }
+    .nav-main a{
+    	text-decoration: none;
+    	color: #000;
+    }
+    .nav-main li{
+    	display: inline-block;
+    	line-height: 5px;
+    	text-align: center;
+    	padding: 20px;
+    }
+    .img4{
+    	margin-left: 10px;
+    }
+    .nav-main a:hover{
+    	color: #3aa747;
+    	border-bottom:3px solid #3aa747;
+    	padding-bottom: 6px;
+    }
+    .nav-main a:visited{
+    	color: #3aa747;
+    	border-bottom:3px solid #3aa747;
+    	padding-bottom: 6px;
+    }
+    /*大图*/
+    .image-wrap{
+    	width: 100%;
+    	height: 670px;
+    	background-image: url(所需小图/banner.png);
+    	background-position: center;
+    	background-repeat: no-repeat;
+    	border-bottom:1px solid #7f7f7f;
+    }
+    /*side*/
+    .ul-right{
+		position: fixed;
+		padding: 0px;
+		right: 0px;
+		top: 120px;
+		width: 78px;
+		/*height: 40px;*/
+	}
+	.box{
+		height: 100px;
+		background-color: #010808;
+		text-align: center;
+	}
+	.pic1{
+		height: 90px;
+		width: 58px;
+		border-bottom:2px solid #4f5453;
+	}
+	.ul-right  img{
+		margin-top:35px;
+	}
+
+    /*main*/
+    .main-wrap{
+    	width: 100%;
+    	height: 1016px;
+    }
+    .main{
+    	width: 1200px;
+    	height: 1016px;
+    }
+    .main-top{
+    	margin-top: 40px;
+    	margin-left: 100px;
+    }
+    .sp{
+    	margin-right: 14px;
+    	font-size: 18px;
+    }
+    .sp1{
+    	font-size:14px;
+    }
+    .sp3{
+    	font-size:14px;
+    	float: right;
+ 
+    }
+    .main-middle{
+    	width: 1150px;
+    	height: 45px;
+    	margin-left: 50px;
+    }
+    .main-middle{
+    	border:0.5px solid #b7b7b7;
+    }
+    .main-middle li{
+    	display: inline-block;
+    	width: 120px;
+    	/*padding: 35px;*/
+    	height: 45px;
+    	/*margin-top: -22px;*/
+    	text-align: center;
+    	line-height: 45px;
+    }
+    .main-middle a{
+    	text-decoration: none;
+    	color: black;
+    }
+    .back{
+    	background-color: #e5e5e5;
+    	background-color-size: 2px;
+    }
+    .main-middle-2{
+    	width: 1150px;
+    	border:0.5px solid #b7b7b7;
+    	height: 45px;
+    	margin-left:-0.5px;
+
+    }
+    .main-middle-3{
+    	width: 1150px;
+    	border:0.5px solid #b7b7b7;
+    	height: 45px;
+    	margin-left:-0.5px;
+    }
+    .main-middle a:hover{
+    	color: #3aa747;
+    }
+    .main-middle a:visited{
+    	color: #3aa747;
+    }
+    .spe{
+    	font-size: 14px;
+    	float: right;
+    }
+    .main-bottom{
+    	 height: 820px;
+         width: 1150px;
+         margin:0px auto;
+         margin-top: 60px;
+    }
+    .pic{
+    	float: left;
+    	width: 274px;
+        height: 293px;
+        margin:5px;
+        text-align: center;
+        border:1px solid #878787;
+    }
+    .emm{
+    	position: relative;
+    	width: 275px;
+        height: 293px;
+    }
+    .hr1{
+    	height: 50px;
+    	position: absolute;
+    	background-color: rgba(71,71,68,0.5);
+    	bottom: 0px;
+    	left: 0px;
+    	right: 0px;
+    	width: 275px;
+    }
+ 	.hr1 p{
+ 		color: white;	
+		text-align: center;
+		height: 25px;
+		line-height: 20px;
+ 	}
+ 	.emm:hover .hr1{
+ 		height: 293px;
+		line-height: 293px;
+ 	}
+ 	.emm:hover .emm-p1{
+ 		margin-top: 125px;
+ 		margin-bottom: 15px;
+ 	}
+ 	.emm1{
+ 		position: relative;
+    	width: 275px;
+        height: 293px;
+ 	}
+ 	.hr2{
+ 		height: 50px;
+    	position: absolute;
+    	background-color: rgba(71,71,68,0.5);
+    	bottom: 0px;
+    	left: 0px;
+    	right: 0px;
+    	width: 275px;
+ 	}
+ 	.hr2 p{
+ 	 	color: white;	
+		text-align: center;
+		height: 25px;
+		line-height: 20px;	
+ 	}
+ 	.emm1:hover .hr2{
+ 		height: 293px;
+		line-height: 293px;
+ 	}
+ 	.emm1:hover .emm-p2{
+ 		margin-top: 125px;
+ 		margin-bottom: 15px;
+ 	}
+ 	.emm2{
+ 		position: relative;
+    	width: 275px;
+        height: 293px;
+ 	}
+ 	.hr3{
+ 		height: 50px;
+    	position: absolute;
+    	background-color: rgba(71,71,68,0.5);
+    	bottom: 0px;
+    	left: 0px;
+    	right: 0px;
+    	width: 275px;
+ 	}
+ 	.hr3 p{
+ 	 	color: white;	
+		text-align: center;
+		height: 25px;
+		line-height: 20px;	
+ 	}
+ 	.emm2:hover .hr3{
+ 		height: 293px;
+		line-height: 293px;
+ 	}
+ 	.emm2:hover .emm-p3{
+ 		margin-top: 125px;
+ 		margin-bottom: 15px;
+ 	}
+ 	.emm3{
+ 		position: relative;
+    	width: 275px;
+        height: 293px;
+ 	}
+ 	.hr4{
+ 		height: 50px;
+    	position: absolute;
+    	background-color: rgba(71,71,68,0.5);
+    	bottom: 0px;
+    	left: 0px;
+    	right: 0px;
+    	width: 275px;
+ 	}
+ 	.hr4 p{
+ 	 	color: white;	
+		text-align: center;
+		height: 25px;
+		line-height: 20px;	
+ 	}
+ 	.emm3:hover .hr4{
+ 		height: 293px;
+		line-height: 293px;
+ 	}
+ 	.emm3:hover .emm-p4{
+ 		margin-top: 125px;
+ 		margin-bottom: 15px;
+ 	}
+ 	.emm4{
+ 		position: relative;
+    	width: 275px;
+        height: 293px;
+ 	}
+ 	.hr5{
+ 		height: 50px;
+    	position: absolute;
+    	background-color: rgba(71,71,68,0.5);
+    	bottom: 0px;
+    	left: 0px;
+    	right: 0px;
+    	width: 275px;
+ 	}
+ 	.hr5 p{
+ 	 	color: white;	
+		text-align: center;
+		height: 25px;
+		line-height: 20px;	
+ 	}
+ 	.emm4:hover .hr5{
+ 		height: 293px;
+		line-height: 293px;
+ 	}
+ 	.emm4:hover .emm-p5{
+ 		margin-top: 125px;
+ 		margin-bottom: 15px;
+ 	}
+ 	.emm5{
+ 		position: relative;
+    	width: 275px;
+        height: 293px;
+ 	}
+ 	.hr6{
+ 		height: 50px;
+    	position: absolute;
+    	background-color: rgba(71,71,68,0.5);
+    	bottom: 0px;
+    	left: 0px;
+    	right: 0px;
+    	width: 275px;
+ 	}
+ 	.hr6 p{
+ 	 	color: white;	
+		text-align: center;
+		height: 25px;
+		line-height: 20px;	
+ 	}
+ 	.emm5:hover .hr6{
+ 		height: 293px;
+		line-height: 293px;
+ 	}
+ 	.emm5:hover .emm-p6{
+ 		margin-top: 125px;
+ 		margin-bottom: 15px;
+ 	}
+ 	.emm6{
+ 		position: relative;
+    	width: 275px;
+        height: 293px;
+ 	}
+ 	.hr7{
+ 		height: 50px;
+    	position: absolute;
+    	background-color: rgba(71,71,68,0.5);
+    	bottom: 0px;
+    	left: 0px;
+    	right: 0px;
+    	width: 275px;
+ 	}
+ 	.hr7 p{
+ 	 	color: white;	
+		text-align: center;
+		height: 25px;
+		line-height: 20px;	
+ 	}
+ 	.emm6:hover .hr7{
+ 		height: 293px;
+		line-height: 293px;
+ 	}
+ 	.emm6:hover .emm-p7{
+ 		margin-top: 125px;
+ 		margin-bottom: 15px;
+ 	}
+ 	.emm7{
+ 		position: relative;
+    	width: 275px;
+        height: 293px;
+ 	}
+ 	.hr8{
+ 		height: 50px;
+    	position: absolute;
+    	background-color: rgba(71,71,68,0.5);
+    	bottom: 0px;
+    	left: 0px;
+    	right: 0px;
+    	width: 275px;
+ 	}
+ 	.hr8 p{
+ 	 	color: white;	
+		text-align: center;
+		height: 25px;
+		line-height: 20px;	
+ 	}
+ 	.emm7:hover .hr8{
+ 		height: 293px;
+		line-height: 293px;
+ 	}
+ 	.emm7:hover .emm-p8{
+ 		margin-top: 125px;
+ 		margin-bottom: 15px;
+ 	}
+    /*bottom*/
+    .bottom-wrap{
+    	width: 100%;
+    	height: 100px;
+    	background-color: #f5f5f5;
+    }
+    .bottom{
+    	width: 1200px;
+    	height: 100px;
+    	float: left;
+    	text-align: center;
+    	margin-left: 200px;
+    }
+    .bottom img{
+    	float: left;
+    }
+    .bottom div{
+    	display: inline-block;
+    }
+    .bottom-1{
+    	width: 250px;
+    	height: 47px;
+    	margin-top: 25px;
+    	margin-left: 30px;
+    	border-right:1px solid #e1e1e1;
+    }
+    .p1{
+    	width: 80px;
+    	font-size: 19px;
+    	margin-left:25px;
+    	float: left;
+    }
+    .p2{
+    	font-size:13px;
+    	margin-left: 25px;
+    	float: left;
+    }
+    .bottom-2{
+     	width: 250px;
+    	height: 47px;
+    	margin-left: 45px;
+    	border-right:1px solid #e1e1e1;
+    }
+    .p3{
+    	width: 80px;
+    	font-size: 19px;
+    	margin-left:25px;
+    	float: left;
+    }
+    .p4{
+    	font-size:13px;
+    	margin-left: 25px;
+    	float: left;
+    }
+    .bottom-3{
+    	width: 250px;
+    	height: 47px;
+    	margin-left: 45px;
+    	border-right:1px solid #e1e1e1;
+    }
+    .p5{
+      	width: 80px;
+    	font-size: 19px;
+    	margin-left:25px;
+    	float: left;
+    }
+    .p6{
+    	font-size:13px;
+    	margin-left: 25px;
+    	float: left;
+    }
+    .bottom-4{
+    	width: 250px;
+    	height: 47px;
+    	margin-left: 45px;
+    }
+    .p7{
+    	width: 80px;
+    	font-size: 19px;
+    	margin-left:25px;
+    	float: left;
+    }
+    .p8{
+    	font-size:13px;
+    	margin-left: 25px;
+    	float: left;
+    }
+    /*last*/
+    .last-wrap{
+    	width: 100%;
+    	height: 100px;
+    	background-color: #323232;
+    }
+    .last{
+    	width: 1200px;
+    	height: 100px;
+    }
+    .last a{
+    	color: #f1f1f1;
+    	text-decoration: none;
+    	padding: 15px;
+    }
+    .last-w{
+    	text-align: center;
+    	line-height: 100px;
+    	color: #f1f1f1;
+    }
+    .last-bottom{
+    	color: #f1f1f1;
+    	font-size: 14px;
+    	margin-top: -25px;
+    	text-align: center;
+    }
+   	</style>
+</head>
+<body>
+	<!--header-->
+	<div class="header-wrap">
+		<div class="header">
+			<div class="header-top">
+				<span>嘿，欢迎来到买猜商城!</span>
+				<div>
+					<a class="a1" href="#">请登录</a>
+					<a class="a2" href="#">免费注册</a>
+					<a class="a3" href="#">我的订单</a>
+					<img src="所需小图/sj.png">
+					<a class="a4" href="#">我的买猜</a>
+					<img src="所需小图/sj.png">
+					<a class="a5" href="#">帮助中心</a>
+					<img class="img1" src="所需小图/wb.png">
+					<img src="所需小图/wx.png">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--nav-->
+	<div class="nav-wrap">
+		<div class="nav">
+			<div class="nav-top">
+				<img src="所需小图/logo.png" class="img2">
+				<form>
+					<input type="text" name="kuang" value="请输入搜索内容" class="kuang same">
+					<input type="image" src="所需小图/search.png" class="search same">
+				</form>
+				<a href="#"><img src="所需小图/cart.png" class="img3"></a>
+			</div>
+			<div class="nav-main">
+				<ul>
+					<li><a href="#">全部商品分类<img src="所需小图/sj.png" class="img4"></a></li>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">名酒</a></li>
+					<li><a href="#">茗茶</a></li>
+					<li><a href="#">玉石</a></li>
+					<li><a href="#">休闲食品</li>
+					<li><a href="#">洗护用品</a></li>
+					<li><a href="#">土特产</a></li>
+					<li><a href="#">积分商城</a></li>
+					<li><a href="#">抽奖游戏</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--大图-->
+	<div class="image-wrap">
+		<!-- <img src="所需小图/banner.png"> -->
+	</div>
+	<!--side -->
+	<div class="ul-right">
+		<div class="box">
+			<div class="pic1">
+				<img src="所需小图/cart1.png">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic1">
+				<img src="所需小图/qq.png">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic1">
+				<img src="所需小图/zuji.png">
+			</div>
+		</div>
+		<div class="box">
+			<div class="pic1">
+				<img src="所需小图/erweima.png">
+			</div>
+		</div>
+		<div class="box">
+			<div >
+				<img src="所需小图/gotop.png">
+			</div>
+		</div>
+	</div>
+	<!--main-->
+	<div class="main-wrap">
+		<div class="main">
+			<div class="main-top"> 
+				<span class="sp">首页</span>
+				<span class="sp1">>&nbsp玉石</span>
+				<span class="sp3">共200件相关商品</span>
+			</div>
+			<div class="main-middle">
+				<div class="main-middle-1">
+					<ul>
+						<li class="back"><a href="#">玉石</a></li>
+						<li><a href="#">白玉</a></li>
+						<li><a href="#">碧玉</a></li>
+						<li><a href="#">黄玉</a></li>
+						<li><a href="#">和田玉</a></li>
+						<li><a href="#">翡翠</a></li>
+						<li><a href="#">绿松玉</a></li>
+						<li><a href="#">墨玉</a></li>
+					</ul>
+				</div>
+				<div class="main-middle-2">
+					<ul>
+						<li class="back"><a href="#">其他</a>	</li>
+						<li><a href="#">吊坠</a></li>
+						<li><a href="#">扳指</a></li>
+						<li><a href="#">手镯</a></li>
+					</ul>
+				</div>
+				<div class="main-middle-3">
+					<ul>
+						<li class="back"><a href="#">地区</a>	</li>
+						<li><a href="#">北京</a></li>
+						<li><a href="#">安徽</a></li>
+						<li><a href="#">福建</a></li>
+						<li><a href="#">内蒙古</a></li>
+						<li><a href="#">宁夏</a></li>
+						<li><a href="#">黑龙江</a></li>
+						<li><a href="#">河北</a></li>
+						<li class="spe"><a href="#">更多</a></li>
+					</ul>
+				</div>
+				<div class="main-bottom">
+					<div class="emm pic">
+						<img src="所需小图/img1.png">
+						<div class="hr1">
+							<p class="emm-p1">竞猜价：¥399.00</p>
+							<p>翡翠千手观音吊坠</p>
+						</div>
+					</div>
+					<div class=" emm1 pic">
+						<img src="所需小图/img2.png">
+						<div class="hr2">
+							<p class="emm-p2">竞猜价：¥1980.00</p>
+							<p>翡翠龙凤吊坠</p>
+						</div>
+					</div>
+					<div class="emm2 pic">
+						<img src="所需小图/img3.png">
+						<div class="hr3">
+							<p class="emm-p3">竞猜价：¥199.00</p>
+							<p>翡翠花蕊吊坠</p>
+						</div>
+					</div>
+					<div class="emm3 pic">
+						<img src="所需小图/img4.png">
+						<div class="hr4">
+							<p class="emm-p4">竞猜价：¥199.00</p>
+							<p>翡翠如意吊坠</p>
+						</div>
+					</div>
+					<div class="emm4 pic">
+						<img src="所需小图/img5.png">
+						<div class="hr5">
+							<p class="emm-p5">竞猜价：¥99.00</p>
+							<p>翡翠婵吊坠</p>
+						</div>
+					</div>
+					<div class="emm5 pic">
+						<img src="所需小图/img6.png">
+						<div class="hr6">
+							<p class="emm-p6">竞猜价：¥99.00</p>
+							<p>翡翠观音（浅色）吊坠</p>
+						</div>
+					</div>
+					<div  class="emm6 pic">
+						<img src="所需小图/img7.png">
+						<div class="hr7">
+							<p class="emm-p7">竞猜价：¥199.00</p>
+							<p>翡翠平安扣（深色）吊坠</p>
+						</div>
+					</div>
+					<div class=" emm7 pic">
+						<img src="所需小图/img8.png">
+						<div class="hr8">
+							<p class="emm-p8">竞猜价：¥199.00</p>
+							<p>翡翠如意吊坠</p>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<!--bottom-->
+	<div class="bottom-wrap">
+		<div class="bottom">
+			<div class="bottom-1">
+				<img src="所需小图/f1.png">
+				<p class="p1">资质认证</p>
+				<p class="p2">服务商100%实名认证</p>
+			</div>
+			<div class="bottom-2">
+				<img src="所需小图/f2.png">
+				<p class="p3">支付安全</p>
+				<p class="p4">明码标价支付及信息安全</p>
+			</div>
+			<div class="bottom-3">
+				<img src="所需小图/f3.png">
+				<p class="p5">保险赔付</p>
+				<p class="p6">为您提供担保赔付</p>
+			</div>
+			<div class="bottom-4">
+				<img src="所需小图/f4.png">
+				<p class="p7">售后无忧</p>
+				<p class="p8">服务出问题经理全程跟进</p>
+			</div>
+		</div>
+	</div>
+	<!--last-->
+	<div class="last-wrap">  
+		<div class="last">
+			<div class="last-w"> 
+				<a href="#">首页</a>|
+				<a href="#">工商代理</a>|
+				<a href="#">财务代记账</a>|
+				<a href="#">股权交易与变更</a>|
+				<a href="#">企业贷款</a>|
+				<a href="#">办公室租赁</a>|
+				<a href="#">社保公积金代理</a>|
+				<a href="#">法律服务</a>
+			</div>
+			<div class="last-bottom">
+				<p>@2017-2018买猜商城有限公司&nbsp版权所有</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
